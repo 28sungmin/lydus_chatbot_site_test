@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LYDUS Chatbot</title>
+    <!-- jquery: 맨 위에 -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <!-- style.css -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <img src="./img/robot.png" alt="챗봇 이미지" id="chatbotImg" />
+    <div id="chatContainer" style="display: none">
+      <iframe id="chatbotFrame" style="width: 100%; height: 100%; border: none"></iframe>
+    </div>
+    <div class="main-1">
+      <header class="d-flex justify-content-around align-items-center">
+        <a href="./index.html">
+          <nav class="logo"></nav>
+        </a>
+        <section class="menu d-flex justify-content-around align-items-center">
+          <div class="about">About</div>
+          <div class="software">Software</div>
+          <div class="data">Data</div>
+          <div class="share">Share</div>
+          <div class="tutorials">Tutorials</div>
+          <div class="guidelines">Guidelines</div>
+        </section>
+        <nav class="login" id="loginNav">
+          <a href="./login.html">
+            <button type="button" class="btn btn-outline-light">Login</button>
+          </a>
+        </nav>
+      </header>
+      <section class="main-text">
+        <div class="text-1">Leave Your Data to US</div>
+        <div class="text-2">LYDUS</div>
+        <div class="text-3">
+          We curate medical data to drive better healthcare. By enhancing the value of complex
+          medical data, we provide deep
+        </div>
+        <div class="text-3">insights for researchers, doctors, and patients.</div>
+      </section>
+    </div>
+    <div class="main-2"></div>
+    <div class="main-3"></div>
+  </body>
+  <script src="./js/script.js"></script>
+</html>
