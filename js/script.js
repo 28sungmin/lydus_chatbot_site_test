@@ -29,13 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.getElementById("chatbotImg").addEventListener("click", () => {
-  const uid = localStorage.getItem("loginId");
-
-  if (!uid) {
-    alert("로그인을 먼저 해주세요.");
-    return;
-  }
-
   const chatContainer = document.getElementById("chatContainer");
   const frame = document.getElementById("chatbotFrame");
 
@@ -44,7 +37,7 @@ document.getElementById("chatbotImg").addEventListener("click", () => {
     chatContainer.style.display = "none";
   } else {
     // 닫혀 있으면 열기
-    const fullUrl = `${CHAT_URL}/?embed=true&loginid=${encodeURIComponent(uid)}`;
+    const fullUrl = `${CHAT_URL}/?embed=true`;
     frame.src = fullUrl;
     chatContainer.style.display = "block";
   }
