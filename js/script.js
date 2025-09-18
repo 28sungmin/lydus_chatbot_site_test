@@ -1,4 +1,4 @@
-const CHAT_URL = "https://test-lydus-chatbot.streamlit.app";
+const CHAT_URL = "https://lydus-chatbot.onrender.com";
 
 document.addEventListener("DOMContentLoaded", () => {
   const loginNav = document.getElementById("loginNav");
